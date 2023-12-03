@@ -100,4 +100,74 @@ nav .icon a img {
 .about a:hover {
   background: #000;
   color: #fff;
+}
+
+.work {
+  background: #f9f9f9;
+  padding-bottom: 20px;
+}
+.work .workTitle, .work .workCard .Card div {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+.work .workCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.work .workCard .Card {
+  width: 32%;
+}
+.work .workCard .Card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.work .workCard .Card div {
+  font-size: 22px;
+}
+
+footer {
+  background: rgba(170, 170, 170, 0.2);
+  text-align: center;
+  padding: 50px 0;
+}
+footer .ft-Title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+footer .ft-Link {
+  margin-bottom: 20px;
+}
+footer .ft-Link a {
+  margin: 0 10px;
+}
+footer .ft-Link a img {
+  width: 30px;
+  height: 30px;
+}
+footer .ft-About {
+  margin-bottom: 20px;
+}
+footer .ft-About a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 0 15px;
+  font-size: 24px;
+}
+footer .ft-About a:hover {
+  color: aquamarine;
 }/*# sourceMappingURL=style.css.map */

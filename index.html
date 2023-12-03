@@ -63,40 +63,40 @@
     </div>
 
     <!-- 作品集 -->
-    <div>
-        <div>作品集</div>
-        <div>
-            <div>
+    <div class="work">
+        <div class="workTitle">作品集</div>
+        <div class="workCard">
+            <div class="Card" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                 <a href="https://kyriehavegoodday.github.io/ReactCoffee2023/" target="_blank">
                     <img src="./img/coffee.jpeg" alt="">
                 </a>
                 <div>咖啡網站</div>
             </div>
-            <div>
+            <div class="Card" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="300">
                 <a href="https://kyriehavegoodday.github.io/Chocolate/" target="_blank">
                     <img src="./img/chocolate.jpeg" alt="">
                 </a>
                 <div>巧克力</div>
             </div>
-            <div>
+            <div class="Card" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="500">
                 <a href="https://kyriehavegoodday.github.io/Branch8/" target="_blank">
                     <img src="./img/travel.jpeg" alt="">
                 </a>
                 <div>旅行網頁</div>
             </div>
-            <div>
+            <div class="Card" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="800">
                 <a href="https://kyriehavegoodday.github.io/turntable/" target="_blank">
                     <img src="./img/game.jpeg" alt="">
                 </a>
                 <div>轉盤遊戲</div>
             </div>
-            <div>
+            <div class="Card" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
                 <a href="https://kyriehavegoodday.github.io/dragonegg/" target="_blank">
                     <img src="./img/game2.jpeg" alt="">
                 </a>
                 <div>龍蛋守護者</div>
             </div>
-            <div>
+            <div class="Card" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1200">
                 <a href="https://kyriehavegoodday.github.io/envelope/" target="_blank">
                     <img src="./img/game3.jpeg" alt="">
                 </a>
@@ -104,7 +104,22 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="ft-Title">Kyrie</div>
+        <div class="ft-Link">
+            <a href=""><img src="./img/fb.png" alt=""></a>
+            <a href=""><img src="./img/line.png" alt=""></a>
+            <a href=""><img src="./img/github.png" alt=""></a>
+        </div>
+        <div class="ft-About">
+            <a href="">關於我</a>
+            <a href="">作品集</a>
+            <a href="">聯絡我</a>
+        </div>
+        <div class="ft-copyRight">Copyright © 2023 Kyrie All rights reserved</div>
+    </footer>
 
+    <!-- CDN -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -112,6 +127,26 @@
         var swiper = new Swiper(".mySwiper", {});
         // AOS 啟動
         AOS.init();
+
+        // 函式 
+        // function box(a,b) {
+        //     let num = a + b;
+        //     console.log(num);
+        // }
+
+        // 函式 (匿名函式)
+        // let box = (() => {
+        //     // ...
+        // })
+            // box()
+
+        // 立即函式
+        // (function () {
+        //     let num = 10 + 10;
+        //     console.log(num);
+        // })()
+
+
     </script>
 
 </body>
