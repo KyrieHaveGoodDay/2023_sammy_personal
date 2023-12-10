@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body id="top">
 
     <!-- 導覽列 -->
     <nav>
@@ -52,6 +52,9 @@
 
 
         </div>
+        <!-- 左右箭頭(可自定義) -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
     <!-- 關於我 -->
@@ -119,32 +122,71 @@
         <div class="ft-copyRight">Copyright © 2023 Kyrie All rights reserved</div>
     </footer>
 
+    <div class="gotop" data-gt-target="#top" data-gt-duration="1000" data-gt-offset="0">
+        <img src="./img/gotop.png" alt="">
+    </div>
+
+   
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JS CDN -->
+    <script src="https://kyriehavegoodday.github.io/GoTo_Element/goto.js"></script>
     <!-- CDN -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         // 啟動輪播
-        var swiper = new Swiper(".mySwiper", {});
+        var swiper = new Swiper(".mySwiper", {
+            // 箭頭
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            // 自動播放
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+        
+        
+
         // AOS 啟動
         AOS.init();
 
-        // 函式 
+        // let sum = 0 ;
+        // // 函式 
         // function box(a,b) {
-        //     let num = a + b;
-        //     console.log(num);
+        //    sum = a + b
+        //    console.log(sum);
         // }
+        
+        // box(5,10)
 
         // 函式 (匿名函式)
         // let box = (() => {
         //     // ...
         // })
-            // box()
+        // box()
 
         // 立即函式
         // (function () {
         //     let num = 10 + 10;
         //     console.log(num);
         // })()
+
+        // 變數
+        // string 字串
+        // number 數字
+        // Boolean 布林值 ( true / false )
+
+        // 宣告
+        // var (es5)
+        // let (es6)
+        // const (es6) 不可改變
+       
+        // let num = 10;
+       
 
 
     </script>
