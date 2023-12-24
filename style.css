@@ -60,10 +60,22 @@ nav .icon a img {
   padding-top: 75px;
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .mySwiper {
+    height: 100%;
+  }
+}
 .mySwiper .swiper-slide img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 414px) {
+  .swiper-button-next,
+.swiper-button-prev {
+    top: 58%;
+  }
 }
 
 .about {
@@ -71,6 +83,17 @@ nav .icon a img {
   height: 100vh;
   padding: 30px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    height: 100%;
+    padding: 100px 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .about {
+    padding: 50px 30px 70px;
+  }
 }
 .about .about_title {
   font-size: 26px;
@@ -124,8 +147,24 @@ nav .icon a img {
   width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .work .workCard {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
 .work .workCard .Card {
   width: 32%;
+}
+@media screen and (max-width: 768px) {
+  .work .workCard .Card {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .work .workCard .Card {
+    width: 100%;
+  }
 }
 .work .workCard .Card img {
   width: 100%;

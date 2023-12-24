@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Dancing+Script&family=Mochiy+Pop+P+One&display=swap");
 $mainFont: "Anton", sans-serif;
+$ipad: 768px;
+$iphone: 414px;
 * {
     margin: 0;
     padding: 0;
@@ -50,6 +52,9 @@ nav {
 .mySwiper {
     padding-top: 75px;
     height: 100vh;
+    @media screen and (max-width: $ipad) {
+        height: 100%;
+    }
     .swiper-slide {
         // background-size: cover;
         // background-repeat: no-repeat;
@@ -59,11 +64,24 @@ nav {
         }
     }
 }
+.swiper-button-next,
+.swiper-button-prev {
+    @media screen and (max-width: $iphone) {
+        top: 58%;
+    }
+}
 .about {
     width: 100%;
     height: 100vh;
     padding: 30px;
     text-align: center;
+    @media screen and (max-width: $ipad) {
+        height: 100%;
+        padding: 100px 30px;
+    }
+    @media screen and (max-width: $iphone) {
+        padding: 50px 30px 70px;
+    }
     .about_title {
         font-size: 26px;
         font-weight: bold;
@@ -110,8 +128,18 @@ nav {
         gap: 10px;
         width: 1200px;
         margin: 0 auto;
+        @media screen and (max-width: $ipad) {
+            width: 100%;
+            padding: 0 10px;
+        }
         .Card {
             width: 32%;
+            @media screen and (max-width: $ipad) {
+                width: 49%;
+            }
+            @media screen and (max-width: $iphone) {
+                width: 100%;
+            }
             img {
                 width: 100%;
                 height: 300px;
