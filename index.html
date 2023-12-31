@@ -30,7 +30,34 @@
                 <img src="./img/line.png" alt="">
             </a>
         </div>
+        <img id="menu" class="menu" src="./img/menu.png" alt="">
     </nav>
+    <!-- menu open -->
+    <div class="menuOpen">
+        <div class="menuIcon">
+            <img id="clase" src="./img/clase.png" alt="">
+        </div>
+        <div class="menuList">
+            <div class="menuData">
+                <a href="">
+                    <img src="./img/github.png" alt="">
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="menuData">
+                <a href="">
+                    <img src="./img/fb.png" alt="">
+                    <span>Facebook</span>
+                </a>
+            </div>
+            <div class="menuData">
+                <a href="">
+                    <img src="./img/line.png" alt="">
+                    <span>Line</span>
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- 輪播 -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -126,9 +153,9 @@
         <img src="./img/gotop.png" alt="">
     </div>
 
-   
 
-   
+
+
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- JS CDN -->
@@ -141,8 +168,8 @@
         var swiper = new Swiper(".mySwiper", {
             // 箭頭
             navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             // 自動播放
             // autoplay: {
@@ -150,19 +177,34 @@
             //     disableOnInteraction: false,
             // },
         });
-        
-        
+
+
 
         // AOS 啟動
         AOS.init();
 
+        let menu = document.getElementById('menu');
+        let menuOpen = document.getElementsByClassName('menuOpen');
+        let clase = document.getElementById('clase');
+
+        // 打開選單
+        menu.addEventListener('click', function () {
+            menuOpen[0].style.setProperty('display', 'block');
+            document.body.style.overflow = "hidden";
+        })
+        // 關閉選單
+        clase.addEventListener('click', function () {
+            menuOpen[0].style.setProperty('display', 'none');
+            document.body.style.overflow = "auto";
+        })
+
         // let sum = 0 ;
-        // // 函式 
+        // // 函式
         // function box(a,b) {
         //    sum = a + b
         //    console.log(sum);
         // }
-        
+
         // box(5,10)
 
         // 函式 (匿名函式)
@@ -186,10 +228,29 @@
         // var (es5)
         // let (es6)
         // const (es6) 不可改變
-       
-        // let num = 10;
-       
 
+        // let num = 10;
+
+        // 延遲執行
+        // setTimeout(function () {
+        //     // ...
+        //     console.log('start');
+        // }, 3000)
+        // 持續執行
+        // setInterval(function () {
+        //     console.log('start');
+        // }, 1000)
+
+        // click(js)
+        // let btns = document.getElementById('btn');
+        // btns.addEventListener('click', function () {
+        //     // ...
+        //     console.log('click ');
+        // })
+        // click(jquery)
+        // $('.btn').click(function () {
+        //     console.log('click123');
+        // })
 
     </script>
 
